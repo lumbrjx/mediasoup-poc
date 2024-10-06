@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediasoup Voice Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <noscript>Please enable JavaScript to access this website.</noscript>
+    <div class="rootDiv">
+        <div class="side-bar">
+            <div class="nav">
+                <div class="guildSettings">
+                    <div class="navguild">
+                        <div class="guild-opener">
+                            <div class="navGuildItems">
+                                <h4 class="guildSelectorName">Server Name</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channels">
+                        <button class="channelName" id="voice1"><i class="fa fa-volume-up"></i> Voice channel</button>
+                        <div class="participants" id="participantContainer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="userBox">
+               <div class="userinfo">
+                    <h4 class="username">Username</h4>
+                    <h6 class="discriminator">#1234</h6>
+                </div>
+                <div class="usermenuicons">
+                    <div class="mic" id="micToggle"></div>
+                    <div class="headphone" id="headphoneToggle"></div>
+                    <div class="settings" id="closeToggle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="chatArea">
+            <div id="videoContainer"></div>
+            <section class="chatbox">
+                <section class="chat-window" id="chatWindow">
+                </section>
+			</section>
+        </div>
+    </div>
+</body>
+<script src="app-bundle.js"></script>
+
+</html>
+
